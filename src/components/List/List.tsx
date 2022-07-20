@@ -24,7 +24,7 @@ const List = () => {
 
       <div>List content</div>
       {emojis.map((item: Emoji) => {
-        return <span key={item.title}>{item.symbol}</span>;
+        return <span title={item.title} key={item.title}>{item.symbol}</span>;
       })}
     </>
   );
